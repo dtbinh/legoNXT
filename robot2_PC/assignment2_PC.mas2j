@@ -1,0 +1,27 @@
+/**
+ * 
+ * This is a template MAS to display agents, class path and asl source path.
+ * 
+ * @author Robot 13 (Yiming Li, Jhand Jaspal and Thomas, James)
+ * @version 2.0
+ * 
+ */
+MAS test_PC {
+
+    // the MAS is running centrally on one machine
+	infrastructure: Centralised
+
+    // there is only one virtual agent doctor
+    // another agent is real robot
+	agents:
+		doctor;
+
+	// classpath for leJOS PC
+	classpath:
+		"C:/Program Files/leJOS NXJ/lib/pc/*.jar"; 
+		"C:/Program Files/leJOS NXJ/lib/pc/3rdparty/*.jar"; 
+
+    // path to agent file
+	aslSourcePath:
+		"src/asl";
+}
